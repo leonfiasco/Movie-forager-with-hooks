@@ -11,11 +11,12 @@ function App() {
   const [movies, setMovies] = useState([])
   const [inputText, setInputText] = useState('')
   
+  
   const handleSubmit = e => {
     e.preventDefault();
       fetch(`https://api.themoviedb.org/3/search/movie?api_key=${apiKey}&query=${inputText}`)
       .then(data => data.json())
-      .then(data => setMovies({ movies: [...data.results]}))
+      .then(data => setMovies( data.results))
 }
 
   const handleChange = e => {
@@ -27,7 +28,7 @@ function App() {
     <div className="App">
       <Nav />
       <SearchArea handleSubmit={handleSubmit} handleChange={handleChange}/>
-      <MovieList movies={movies}/>
+      <MovieList movies={movies}/> 
     </div>
   );
 }
