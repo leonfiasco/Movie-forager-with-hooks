@@ -2,7 +2,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Movie forgaer
 
-I made a same app using React class components but after watching a tutorial on React Hooks, I decided to create it again using hooks.
+I made a same app using React class components but after following a tutorial on React Hooks, I decided to re-create it again using hooks.
 
 
 
